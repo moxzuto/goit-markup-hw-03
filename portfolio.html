@@ -20,51 +20,55 @@
   <body>
     <div class="container">
       <header class="portfolio-header">
-        <a href="./index.html" class="header-logo link"
-          ><span class="web-style">Web</span>Studio</a
-        >
-        <!-- Навигация -->
-        <nav>
-          <ul class="header-nav-list list">
-            <li class="header-list-item">
+        <div class="container">
+      <header class="header">
+        <div class="header-container">
+          <!-- Навигация -->
+          <nav class="header-container">
+            <a href="./index.html" class="header-logo link"
+              ><span class="web-style">Web</span>Studio</a
+            >
+            <ul class="header-nav-list list">
+              <li class="header-list-item">
+                <a
+                  class="header-list-link header-active-link  link"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="header-list-item">
+                <a
+                  class="header-list-link header-active-link current link"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header-list-item">
+                <a
+                  class="header-list-link header-active-link link"
+                  href="#contacts"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contacts header-container list">
+            <li class="contacts-list-item">
               <a
-                class="header-list-link header-active-link link"
-                href="./index.html"
-                >Студія</a
+                class="header-contacts-link header-active-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
             </li>
-            <li class="header-list-item">
+            <li class="contacts-list-item">
               <a
-                class="header-list-link header-active-link current link"
-                href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="header-list-item">
-              <a
-                class="header-list-link header-active-link link"
-                href="#contacts"
-                >Контакти</a
+                class="header-contacts-link header-active-link link"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
               >
             </li>
           </ul>
-        </nav>
-        <ul class="header-contacts list">
-          <li>
-            <a
-              class="header-contacts-link header-active-link link"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a
-              class="header-contacts-link header-link header-active-link link"
-              href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </header>
       <main>
         <section class="portfolio-button-navigation portfolio">
@@ -96,15 +100,15 @@
               </button>
             </li>
           </ul>
-          <ul class="list">
-            <li>
+          <ul class="portfolio-main list">
+            <li class="portfolio-images-list">
               <a class="link" href="">
                 <img src="./images/website.jpg" alt="design" />
                 <h2 class="portfolio-topic-text">Технокряк</h2>
                 <p class="portfolio-paragraph">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-images-list">
               <a class="link" href="">
                 <img src="./images/design.jpg" alt="baskerball design" />
                 <h3 class="portfolio-topic-text">
@@ -113,42 +117,42 @@
                 <p class="portfolio-paragraph">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-images-list">
               <a class="link" href="">
                 <img src="./images/addendum.jpg" alt="restoraunt" />
                 <h2 class="portfolio-topic-text">Ресторан Seafood</h2>
                 <p class="portfolio-paragraph">Додаток</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-images-list">
               <a class="link" href="">
                 <img src="./images/marketing.jpg" alt="headphones" />
                 <h2 class="portfolio-topic-text">Проєкт Prime</h2>
                 <p class="portfolio-paragraph">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-images-list">
               <a class="link" href="">
                 <img src="./images/addendumbox.jpg" alt="project boxes" />
                 <h2 class="portfolio-topic-text">Проєкт Boxes</h2>
                 <p class="portfolio-paragraph">Додаток</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-images-list">
               <a class="link" href="">
                 <img src="./images/websitepc.jpg" alt="website on pc" />
                 <h2 class="portfolio-topic-text">Inspiration has no Borders</h2>
                 <p class="portfolio-paragraph">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-images-list">
               <a class="link" href="">
                 <img src="./images/designbook.jpg" alt="book" />
                 <h2 class="portfolio-topic-text">Видання Limited Edition</h2>
                 <p class="portfolio-paragraph">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-images-list">
               <a class="link" href="">
                 <img
                   src="./images/marketingbook.jpg"
@@ -158,7 +162,7 @@
                 <p class="portfolio-paragraph">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="portfolio-images-list">
               <a class="link" href="">
                 <img src="./images/addendumpc.jpg" alt="about business" />
                 <h2 class="portfolio-topic-text">Growing Business</h2>
@@ -171,30 +175,30 @@
       <!-- футер -->
       <footer class="footer">
         <div class="container">
-        <a href="./index.html" class="footer-logo link"
-          ><span class="web-style">Web</span>Studio</a
-        >
-        <address class="fotter-address">
-          <ul class="list">
-            <li>
-              <a
-                class="footer-map link"
-                href="https://goo.gl/maps/VGLmBFfd4AsAkcc5A"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li>
-              <a class="footer-contacts link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="footer-contacts link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <a href="./index.html" class="footer-logo link"
+            ><span class="web-style">Web</span>Studio</a
+          >
+          <address class="fotter-address">
+            <ul class="list">
+              <li>
+                <a
+                  class="footer-map link"
+                  href="https://goo.gl/maps/VGLmBFfd4AsAkcc5A"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a class="footer-contacts link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="footer-contacts link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
       </footer>
     </div>
