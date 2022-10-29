@@ -14,6 +14,13 @@ body {
   background-color: var(--background-color);
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
 p,
 h2,
 h3 {
@@ -108,8 +115,16 @@ h3 {
 .hero {
   background: #2f303a;
   text-align: center;
-  padding-bottom: 94px;
   margin-bottom: 94px;
+
+
+}
+
+.hero-div {
+  padding-top: 100px;
+  padding-left: 226px;
+  padding-right: 226px;
+  padding-bottom: 140px;
 }
 
 .hero-text {
@@ -136,6 +151,7 @@ h3 {
   border: 1px solid transparent;
   width: 216px;
 }
+
 
 .hero-button:hover,
 .hero-button:focus {
@@ -228,6 +244,9 @@ h3 {
 
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 160px;
+  justify-content: center;
 }
 
 .fotter-address {
@@ -242,6 +261,9 @@ h3 {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--background-color);
+
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-map {
@@ -256,6 +278,13 @@ h3 {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #ffffff99;
+
+  display: block;
+}
+
+.footer-contacts-link:not(:last-child){
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-map:hover {
