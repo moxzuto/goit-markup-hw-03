@@ -120,8 +120,6 @@ h3 {
   background: #2f303a;
   text-align: center;
   padding-top: 100px;
-  padding-left: 226px;
-  padding-right: 226px;
   padding-bottom: 140px;
 }
 
@@ -155,6 +153,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -171,6 +170,11 @@ h3 {
 
 .main-list-link {
   display: flex;
+  gap: 30px;
+}
+
+.main-link-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .team-section {
@@ -207,11 +211,15 @@ h3 {
 }
 
 .team-portrait-list {
-  margin-right: 30px;
-  margin-left: 30px;
-  padding-bottom: 30px;
+
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
 }
+
+.team-portrait-list:not(:first-child, :last-child) {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
 
 .team-topic {
   font-weight: 700;
@@ -231,13 +239,19 @@ h3 {
   color: var(--main-color);
   text-align: center;
 
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.out-team-group {
+.team-portrait-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.our-team-group {
   padding-bottom: 94px;
   padding-top: 94px;
+  background-color: #F5F4FA;
 }
 
 .team-labor {
@@ -324,29 +338,21 @@ h3 {
   flex-wrap: wrap;
   margin-top: 34px;
   align-items: center;
+  gap: 30px;
 }
 
-.portfolio-images-list:nth-child(3n + 2) {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 0px;
-}
-
-.portfolio-images-list {
-  padding-bottom: 30px;
-}
-
-
-.portfolio-topic-text,
-.portfolio-paragraph:nth-last-child(2) {
+.main-portfolio-text-div {
   padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .portfolio-topic-text,
 .portfolio-paragraph {
-  padding-left: 24px;
-  padding-right: 24px;
-  
+  border-left: var(--background-color);
+  border-right: var(--background-color);
+  border-bottom: var(--background-color);
 }
 
 .teamjob-images-list {
@@ -391,7 +397,7 @@ h3 {
   border-radius: 4px;
 }
 
-.portfolio-button-list:not(:first-child, :last-child) {
+.portfolio-button-list {
   padding-right: 8px;
   padding-left: 8px;
 }
